@@ -1,3 +1,91 @@
 body {
+
+body {
     background-color: #111;
+    color: #e8d8ff;
+    font-family: "Yu Gothic", sans-serif;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #b88cff;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.card {
+    background-color: #1b1b1b;
+    border: 1px solid #3a2f4a;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #d8a8ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+}
+
+/*.☆.* 横メニュー *.☆.*/
+#menuButton {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+    width: 50px;
+    height: 50px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #2d203d;
+    color: #e8d8ff;
+
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#menu {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+
+    background: #1b1b1b;
+
+    border: 1px solid #4d3a67;
+    border-radius: 15px;
+
+    padding: 15px;
+
+    display: none;
+}
+
+#menu a {
+    display: block;
+    margin: 10px 0;
+}
 }
