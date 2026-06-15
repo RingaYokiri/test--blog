@@ -55,11 +55,54 @@ footer {
     padding: 20px;
     color: #777;
 }
+
+/*.☆.* 横メニュー *.☆.*/
+#menuButton {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+    width: 50px;
+    height: 50px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #2d203d;
+    color: #e8d8ff;
+
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#menu {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+
+    background: #1b1b1b;
+
+    border: 1px solid #4d3a67;
+    border-radius: 15px;
+
+    padding: 15px;
+
+    display: none;
+}
+
+#menu a {
+    display: block;
+    margin: 10px 0;
+}
+
+
 </style>
 </head>
 
+
 <body>
 
+<!-- *.☆.* ヘッダー *.☆.* -->
 <header>
     <h1>✦ 宵霧の部屋 ✦</h1>
     <p class="subtitle">
@@ -69,6 +112,7 @@ footer {
 
 <main>
 
+<!-- *.☆.* About *.☆.* -->
     <div class="card">
         <h2>About</h2>
         <p>
@@ -77,6 +121,7 @@ footer {
         </p>
     </div>
 
+<!-- *.☆.* 内容 *.☆.* -->
     <div class="card">
         <h2>Contents</h2>
         <ul>
@@ -88,6 +133,7 @@ footer {
         </ul>
     </div>
 
+<!-- *.☆.* そのた *.☆.* -->
     <div class="card">
         <h2>Message</h2>
         <p>
@@ -97,9 +143,36 @@ footer {
 
 </main>
 
+<!-- *.☆.* フッター *.☆.* -->
 <footer>
-    © 2026 宵霧
+    © 2026/06 琳牙 宵霧(Ringa Yokiri)
 </footer>
 
+<!-- *.☆.* 横メニュー *.☆.* -->
+ <button id="menuButton">☾</button>
+
+<nav id="menu">
+    <a href="#">Home</a>
+    <a href="#">Diary</a>
+    <a href="#">Gallery</a>
+    <a href="#">Travel</a>
+    <a href="#">Gem</a>
+</nav>
+    
+<!-- *.☆.* 横メニュー　body直前にいれる *.☆.* -->
+<script>
+const button = document.getElementById("menuButton");
+const menu = document.getElementById("menu");
+
+button.addEventListener("click", () => {
+
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
+
+});
+</script>
 </body>
 </html>
