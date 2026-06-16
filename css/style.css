@@ -1,9 +1,59 @@
+/* *.☆.* 基本設定 *.☆.* */
 body {
     background-color: #111;
     color: #e8d8ff;
     font-family: "Yu Gothic", sans-serif;
     margin: 0;
 }
+
+/* *.☆.* 館名ロゴ *.☆.* */
+
+.title-frame {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.site-title {
+
+    font-size: 3.5rem;
+
+    letter-spacing: 0.25em;
+
+    font-weight: normal;
+
+    margin-bottom: 10px;
+
+    color: #f0e8ff;
+
+    text-shadow:
+        0 0 10px rgba(184, 140, 255, 0.4),
+        0 0 20px rgba(184, 140, 255, 0.2);
+}
+
+.site-subtitle {
+
+    color: #b88cff;
+
+    letter-spacing: 0.3em;
+
+    font-size: 0.95rem;
+
+    margin-top: 0;
+
+    font-style: italic;
+}
+
+.ornament {
+
+    color: #8d6bc9;
+
+    letter-spacing: 0.5em;
+
+    margin: 15px 0;
+
+    font-size: 1.2rem;
+}
+
 
 header {
     text-align: center;
@@ -19,6 +69,8 @@ h1 {
     color: #b88cff;
 }
 
+
+/* *.☆.* コンテンツ *.☆.* */
 main {
     max-width: 800px;
     margin: auto;
