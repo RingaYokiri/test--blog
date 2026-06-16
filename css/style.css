@@ -145,3 +145,23 @@ footer {
     display: block;
     margin: 10px 0;
 }
+
+/* *.☆.* スマホ対応 *.☆.* */
+
+@media (max-width: 768px) {
+
+    .site-title {
+        font-size: 2.2rem;
+        letter-spacing: 0.1em;
+    }
+
+    .site-subtitle {
+        font-size: 0.8rem;
+        letter-spacing: 0.15em;
+    }
+
+    #menu {
+        width: 180px;
+    }
+
+}
