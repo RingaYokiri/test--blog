@@ -172,3 +172,36 @@ footer {
     }
 
 }
+
+/*.☆.* ↓ここから記事用↓ *.☆.*/
+/*.☆.* 記事サブタイトル *.☆.*/
+.article-subtitle {
+
+    text-align: center;
+
+    color: #b88cff;
+
+    font-style: italic;
+}
+
+/*.☆.* タグ *.☆.*/
+.tags {
+
+    margin-top: 15px;
+}
+
+/*.☆.* タグ装飾 *.☆.*/
+.tag {
+
+    display: inline-block;
+
+    background: #2d203d;
+
+    border: 1px solid #4d3a67;
+
+    border-radius: 20px;
+
+    padding: 5px 12px;
+
+    margin: 3px;
+}
