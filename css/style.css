@@ -72,8 +72,8 @@ body {
     font-size: 1.2rem;
 }
 
-
-header {
+/*.☆.* 元ヘッダー。不要かも *.☆.*/
+.title-frame {
     text-align: center;
     padding: 50px 20px;
 }
