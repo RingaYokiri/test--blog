@@ -1,5 +1,6 @@
 ---
 layout: article_template
+permalink: /test_article.html
 
 title: 初めてのJekyll記事
 
