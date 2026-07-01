@@ -1,31 +1,49 @@
 ---
-layout: article_template
-title: 更新履歴
+layout: list_template
+
+title: 館内更新記録
+
 subtitle: Update Log
 ---
 
 <div class="card">
 
-<h2>更新履歴</h2>
+    <h2>{{ page.title }}</h2>
 
-{% for post in site.posts %}
+    <p class="article-subtitle">
 
-<hr>
+        {{ page.subtitle }}
 
-<h3>
-    <a href="{{ post.url | relative_url }}">
-        {{ post.title }}
-    </a>
-</h3>
+    </p>
 
-<p>
-📅 {{ post.date | date: "%Y.%m.%d" }}
-</p>
+    <hr>
 
-<p>
-{{ post.subtitle }}
-</p>
+    {% for post in site.posts %}
 
-{% endfor %}
+    <p>
+
+        📅 {{ post.date | date: "%Y.%m.%d" }}
+
+    </p>
+
+    <h3>
+
+        <a href="{{ post.url | relative_url }}">
+
+            {{ post.title }}
+
+        </a>
+
+    </h3>
+
+    <p>
+
+        {{ post.subtitle }}
+
+    </p>
+
+    <hr>
+
+    {% endfor %}
 
 </div>
